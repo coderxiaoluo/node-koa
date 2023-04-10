@@ -5,7 +5,6 @@ class UserController {
     const user = ctx.request.body
     // 将用户存储起来
     const results = await userService.createDB(user)
-
     ctx.body = {
       message: "创建成功",
       data: results

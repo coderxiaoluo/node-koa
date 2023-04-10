@@ -14,7 +14,7 @@ connectionPool.getConnection((error, conn) => {
   conn.connect((err) => {
     if (err) {
       console.log("连接数据库失败")
-    } else {
+    } else {  
       console.log('数据库连接成功~')
     }
   })
